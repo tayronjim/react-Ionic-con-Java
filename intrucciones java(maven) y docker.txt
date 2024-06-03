@@ -1,0 +1,25 @@
+mvn spring-boot:run
+
+mvn clean install  
+
+mvn package       
+
+
+
+
+
+docker build --tag=service:latest .  
+
+docker run -p9000:9000 service:latest
+
+
+
+
+
+FROM openjdk:18
+MAINTAINER baeldung.com
+COPY target/awesome-app-api-gateway-1.0.0-SNAPSHOT.war gateway.war  (puede ser un archivo .war o .jar, segun la configuracion)
+ENTRYPOINT ["java","-jar","/gateway.war"]
+
+
+
