@@ -1,0 +1,14 @@
+
+.table_td ion-col {
+    background-color: #6d67df;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: center;
+}
+.table_th ion-col {
+    background-color: #135d54;
+    border: solid 1px #fff;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+  }
